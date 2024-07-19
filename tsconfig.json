@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler", // Adjusted to "bundler" as per your first snippet
+    "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "jsxImportSource": "react",
+    "lib": ["dom", "dom.iterable", "esnext"], // Combined from both snippets
+    "allowJs": true, // Added from your first snippet
+    "incremental": true, // Added from your first snippet
     "plugins": [
       {
         "name": "next"
@@ -21,6 +24,16 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts", // Added from your first snippet
+    "app/page.tsx", // Added from your first snippet
+    "app/layout.tsx", // Added from your first snippet
+    "app/(auth)/_component/SignInForm.tsx", // Added from your first snippet
+    "app/(auth)/_component/SignUpForm.jsx", // Added from your first snippet
+    "app/api/auth/signin/route.js" // Added from your first snippet
+, "app/(auth)/_component/SignInForm.jsx", "app/(auth)/signin/page.tsx"  ],
   "exclude": ["node_modules"]
 }
