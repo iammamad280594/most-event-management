@@ -75,7 +75,7 @@ export default function CreateEventForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-[#1a1a2e] text-white p-8 rounded-lg shadow-lg space-y-6 max-w-4xl mx-auto">
+    <form onSubmit={handleSubmit} className="bg-[#1a1a2e] text-white p-6 md:p-8 rounded-lg shadow-lg space-y-6 max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold mb-4 text-center text-[#f5f5f5]">Create New Event</h1>
       <div className="space-y-4">
         <div>
@@ -85,7 +85,7 @@ export default function CreateEventForm() {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
-            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
           />
         </div>
         <div>
@@ -95,7 +95,7 @@ export default function CreateEventForm() {
             value={date}
             onChange={(e) => setDate(e.target.value)}
             required
-            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
           />
         </div>
         <div>
@@ -105,7 +105,7 @@ export default function CreateEventForm() {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             required
-            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
           />
           <label className="flex items-center mt-2 text-sm">
             <input
@@ -124,7 +124,7 @@ export default function CreateEventForm() {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             required
-            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
           />
         </div>
         <div>
@@ -132,7 +132,7 @@ export default function CreateEventForm() {
           <input
             type="file"
             onChange={handleImageUpload}
-            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+            className="border border-[#4a4a7b] bg-[#2c2c3e] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
           />
         </div>
         <div className="flex items-center mt-2">
@@ -156,7 +156,7 @@ export default function CreateEventForm() {
                     value={tier.type}
                     onChange={(e) => handleTicketTierChange(index, 'type', e.target.value)}
                     required
-                    className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                    className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                   />
                 </div>
                 <div>
@@ -166,7 +166,7 @@ export default function CreateEventForm() {
                     value={tier.price}
                     onChange={(e) => handleTicketTierChange(index, 'price', e.target.value)}
                     required
-                    className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                    className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                   />
                 </div>
                 <div>
@@ -176,7 +176,7 @@ export default function CreateEventForm() {
                     value={tier.quantity}
                     onChange={(e) => handleTicketTierChange(index, 'quantity', e.target.value)}
                     required
-                    className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                    className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                   />
                 </div>
                 <button
@@ -208,7 +208,7 @@ export default function CreateEventForm() {
                   value={promo.name}
                   onChange={(e) => handlePromotionChange(index, 'name', e.target.value)}
                   required
-                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                 />
               </div>
               <div>
@@ -218,7 +218,7 @@ export default function CreateEventForm() {
                   value={promo.discount}
                   onChange={(e) => handlePromotionChange(index, 'discount', e.target.value)}
                   required
-                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                 />
               </div>
               <div>
@@ -228,7 +228,7 @@ export default function CreateEventForm() {
                   value={promo.startDate}
                   onChange={(e) => handlePromotionChange(index, 'startDate', e.target.value)}
                   required
-                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                 />
               </div>
               <div>
@@ -238,7 +238,7 @@ export default function CreateEventForm() {
                   value={promo.endDate}
                   onChange={(e) => handlePromotionChange(index, 'endDate', e.target.value)}
                   required
-                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff]"
+                  className="border border-[#6a6aff] bg-[#1e1e3f] p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a6aff] w-full"
                 />
               </div>
               <button
@@ -259,7 +259,7 @@ export default function CreateEventForm() {
           </button>
         </div>
       </div>
-      <button type="submit" className="bg-[#6a6aff] text-white px-6 py-3 rounded-lg hover:bg-[#5a5aff]">
+      <button type="submit" className="bg-[#6a6aff] text-white px-6 py-3 rounded-lg hover:bg-[#5a5aff] w-full">
         Create Event
       </button>
     </form>
